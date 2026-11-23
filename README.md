@@ -87,7 +87,8 @@ society-erp/
 ├── docs/
 │   ├── Project_Report.pdf    project report (diagrams, CRUD evidence, test cases)
 │   ├── Project_Report.html   source of the report
-│   └── screenshots/          screenshots used in the report
+│   ├── screenshots/          screenshots used in the report
+│   └── tools/                scripts that build the report and print it to PDF
 ├── admin/
 │   ├── dashboard.php, reports.php
 │   ├── flats.php, flat_add.php, flat_edit.php, flat_delete.php, _flat_form.php
