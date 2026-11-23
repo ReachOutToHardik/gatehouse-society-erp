@@ -4,6 +4,18 @@ A web-based ERP for a housing society (the sample data uses a society called *Pa
 monthly maintenance bills and complaints. Each flat gets its own **Flat ID and password**,
 so residents can log in to see their bills and dues and raise complaints.
 
+## Team
+
+BCA 5th Semester (2026), Lachoo Memorial College of Science & Technology, Jodhpur
+Submitted to **Mr. Ashish Rai**
+
+| Name | Roll No. |
+|------|----------|
+| Hardik Joshi | 243501062 |
+| Harsh Vaishnav | 243501069 |
+| Mahak | 243501111 |
+| Nishita | 243501139 |
+
 ## Technology
 
 | Layer    | Technology |
