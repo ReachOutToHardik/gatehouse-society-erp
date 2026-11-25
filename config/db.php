@@ -1,12 +1,17 @@
 <?php
 // ---------------------------------------------
 // Database connection (MySQL via mysqli)
-// Change these values if your XAMPP MySQL uses a password.
+// On a web host: copy db.local.example.php to db.local.php and put the
+// host's database details there (db.local.php is not uploaded to GitHub).
+// Without that file the XAMPP defaults below are used.
 // ---------------------------------------------
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'society_db');
+if (file_exists(__DIR__ . '/db.local.php')) {
+    require __DIR__ . '/db.local.php';
+}
+defined('DB_HOST') || define('DB_HOST', 'localhost');
+defined('DB_USER') || define('DB_USER', 'root');
+defined('DB_PASS') || define('DB_PASS', '');
+defined('DB_NAME') || define('DB_NAME', 'society_db');
 
 // Names shown in the app (change these to rebrand)
 define('APP_NAME', 'Gatehouse');

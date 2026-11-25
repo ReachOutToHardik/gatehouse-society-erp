@@ -1,0 +1,2 @@
+# Hosting database details - never commit passwords
+config/db.local.php

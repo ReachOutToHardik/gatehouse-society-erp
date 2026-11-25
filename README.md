@@ -78,7 +78,18 @@ Submitted to **Mr. Ashish Rai**
 3. Open http://localhost/phpmyadmin, go to **Import**, choose `database/society_db.sql` and click **Go**
 4. Open http://localhost/society-erp/
 
-If your MySQL root user has a password, set it in `config/db.php`. The app name and society name
+If your MySQL root user has a password, set it in `config/db.php`.
+
+## Putting it online (free, InfinityFree)
+
+1. Sign up at infinityfree.com and create a hosting account (pick a free subdomain).
+2. In the control panel open **MySQL Databases**, create a database (e.g. `society`) and note
+   the **MySQL Hostname, Username, Database Name** and your hosting **password**.
+3. Open **phpMyAdmin** for that database → **Import** → choose `database/society_db_hosting.sql` → **Go**.
+4. Open the **File Manager** → go into `htdocs` → delete the default `index2.html` → upload the website files
+   (everything except `database/`, `docs/` and `.git`).
+5. In `htdocs/config`, copy `db.local.example.php` to `db.local.php` and fill in the four values from step 2.
+6. Open your subdomain, for example `https://gatehouse.infinityfreeapp.com`. The app name and society name
 are also set there (`APP_NAME`, `SOCIETY_NAME`).
 
 ## Folder Structure
